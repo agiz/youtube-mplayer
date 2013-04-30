@@ -1,0 +1,16 @@
+Requirements:
+Chrome like browser.
+python
+mplayer
+
+Server configuration:
+In `youtube_mplayer.server.py` modify `PORT` and `[PLAYER, '-really-quiet', '-cache', CACHE, '-af', 'channels=4:4:0:2:0:0:1:3:1:1', yt_url]` to your needs.
+
+Client configuration:
+In `youtube_mplayer.client.user.js` modify `trigger_url` to your needs. You might also change itag order according to your preferences.
+
+Server side:
+python youtube_mplayer.server.py
+
+Client side:
+Drag `youtube_mplayer.client.user.js` to `chrome://extensions/` screen.
